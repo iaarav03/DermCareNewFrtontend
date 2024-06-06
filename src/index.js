@@ -5,7 +5,7 @@ import { createBrowserRouter, Outlet, RouterProvider } from "react-router-dom";
 
 import About from "./About.js";
 
-import Chat from "./chat.js";
+
 
 import Navbar from "./Navbar.js";
 import Body from "./start.js";
@@ -45,7 +45,7 @@ const Applayout = () => {
         >
           <Navbar />
           <Outlet />
-          <Chat />
+       
           <Footer />
         </AdminContext.Provider>
       </UserContext.Provider>
@@ -105,10 +105,7 @@ const App = createBrowserRouter([
         element: <About />,
       },
 
-      {
-        path: "/chat",
-        element: <Chat />,
-      },
+     
 
       {
         path: "/appointment",
