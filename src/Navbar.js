@@ -71,25 +71,28 @@ const Navbar = () => {
               role="menu"
               className="fixed right-0 flex flex-col gap-4 top-16 z-50 w-1/2 bg-white bg-opacity-90 shadow-lg p-5 transition-transform transform translate-x-0"
             >
+             <Link to="/" onClick={toggleModal}>
               <li className="block w-full cursor-pointer select-none rounded-md px-3 pt-[9px] pb-2 text-start leading-tight transition-all hover:bg-gray-200">
-                <Link to="/" onClick={toggleModal}>Home</Link>
+               Home
               </li>
+              </Link>
+  <Link to="/about" onClick={toggleModal}>
               <li className="block w-full cursor-pointer select-none rounded-md px-3 pt-[9px] pb-2 text-start leading-tight transition-all hover:bg-gray-200">
-                <Link to="/about" onClick={toggleModal}>Skin Health A-Z</Link>
+              Skin Health A-Z
               </li>
+</Link>
+   <Link to="/plogin" onClick={toggleModal}>
               <li className="block w-full cursor-pointer select-none rounded-md px-3 pt-[9px] pb-2 text-start leading-tight transition-all hover:bg-gray-200">
-                <Link to="/plogin" onClick={toggleModal}>Appointment</Link>
+             Appointment
               </li>
+</Link>
+ <Link to="/admin/login" onClick={toggleModal}>
               <li className="block w-full cursor-pointer select-none rounded-md px-3 pt-[9px] pb-2 text-start leading-tight transition-all hover:bg-gray-200">
-                <button
-                  onClick={() => {
-                    handleSubmit();
-                    toggleModal();
-                  }}
-                >
+               
                   Admin
-                </button>
+              
               </li>
+              </Link>
             </ul>
           </>
         )}

@@ -95,15 +95,16 @@ const AdminLogin = () => {
       style={{ backgroundImage: `url(${login})`}}
       >
         <div className="bg-white p-8 rounded-lg shadow-lg w-full max-w-md bg-opacity-85 ">
-          <h2 className="text-4xl  font-bold text-[#2b8787] mb-4 text-center">Login</h2>
+          <h2 className="text-3xl  font-bold text-[#2b8787] mb-4 text-center">Welcome Admin</h2>
           <form onSubmit={formik.handleSubmit}>
             <div className="mb-4">
               <label htmlFor="email" className="block text-sm font-medium text-gray-700">
-                Email
+                Email  
               </label>
               <input
                 id="email"
                 type="text"
+                placeholder='For demo please use :- dermcare@gmail.com'
                 className="mt-1 p-2 w-full border border-red-300 rounded-lg"
                 {...formik.getFieldProps('email')}
               />
@@ -115,6 +116,7 @@ const AdminLogin = () => {
               <input
                 id="password"
                 type="password"
+                placeholder='dermcare'
                 className="mt-1 p-2 w-full border border-red-300 rounded-lg"
                 {...formik.getFieldProps('password')}
               />
@@ -126,6 +128,7 @@ const AdminLogin = () => {
               <input
                 id="confirmPassword"
                 type="password"
+                placeholder='dermcare'
                 className="mt-1 p-2 w-full border border-red-300 rounded-lg"
                 {...formik.getFieldProps('confirmPassword')}
               />

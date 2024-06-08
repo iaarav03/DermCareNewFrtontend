@@ -114,6 +114,7 @@ const PatientLogin = () => {
               <input
                 id="email"
                 type="text"
+                placeholder='For Demo Use -: user@gmail.com'
                 className="mt-1 p-2 w-full border border-[#2b8787] rounded-lg"
                 {...formik.getFieldProps('email')}
               />
@@ -125,6 +126,7 @@ const PatientLogin = () => {
               <input
                 id="password"
                 type="password"
+                placeholder='dermcare'
                 className="mt-1 p-2 w-full border border-[#2b8787] rounded-lg"
                 {...formik.getFieldProps('password')}
               />
@@ -136,6 +138,7 @@ const PatientLogin = () => {
               <input
                 id="confirmPassword"
                 type="password"
+                placeholder='dermcare'
                 className="mt-1 p-2 w-full border border-[#2b8787] rounded-lg"
                 {...formik.getFieldProps('confirmPassword')}
               />
