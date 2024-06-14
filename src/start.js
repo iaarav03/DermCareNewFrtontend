@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useRef} from 'react';
 import { useNavigate } from 'react-router-dom';
 import doc from "./assets/f.jpg";
 import img1 from "./assets/img1.jpg";
@@ -16,6 +16,19 @@ function Body() {
   const handleSubmit = () => {
     navigate('/pLogin'); // Redirect the user to the '/choose' route
   };
+  const scrollref=useRef(null);
+ const handlescroll=()=>{
+  scrollref.current.scrollIntoView({ behavior: 'smooth' }); // Scroll to the section
+ }
+ const handlegetinfo=()=>{
+  navigate('/about')
+ }
+
+ const handleapoint=()=>{
+  navigate('/plogin')
+ }
+
+
 
   return (
     <main>
@@ -47,14 +60,15 @@ function Body() {
         <div className="flex md:flex-row flex-col md:w-[70vw]">
           <div className="md:w-1/3 p-4 bg-white flex flex-col relative">
             <div>
-              <h1 className="font-bold text-xl mb-4 text-center">Maps, Directions & Locations</h1>
+              <h1 className="font-bold text-xl mb-4 text-center">Skin Health A-Z</h1>
               <p className="font-sans mb-4 text-center">
                 Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.
               </p>
             </div>
-            <button className="self-center relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
+            <button onClick={handlegetinfo}
+             className="self-center relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
               <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white text-black rounded-md group-hover:bg-opacity-0">
-                Get Directions
+                Get Info
               </span>
             </button>
             <div className="hidden md:block absolute right-0 top-0 h-full w-px bg-gray-300"></div>
@@ -68,7 +82,8 @@ function Body() {
                 Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.
               </p>
             </div>
-            <button className="self-center relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
+            <button  onClick={handlescroll}
+            className="self-center relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
               <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white text-black rounded-md group-hover:bg-opacity-0">
                 Find a Doctor
               </span>
@@ -84,7 +99,8 @@ function Body() {
                 Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.
               </p>
             </div>
-            <button className="self-center relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
+            <button  onClick={handleapoint}
+             className="self-center relative inline-flex items-center justify-center p-0.5 mb-2 me-2 overflow-hidden text-sm font-medium text-gray-900 rounded-lg group bg-gradient-to-br from-green-400 to-blue-600 group-hover:from-green-400 group-hover:to-blue-600 hover:text-white dark:text-white focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800">
               <span className="relative px-5 py-2.5 transition-all ease-in duration-75 bg-white text-black rounded-md group-hover:bg-opacity-0">
                 Appointments
               </span>
@@ -125,7 +141,7 @@ function Body() {
      
       <div  className=''>
       <div className='flex justify-center mt-20'>
-    <div className='w-full max-w-[60vw] mx-4 '>
+    <div className='w-full max-w-[60vw] mx-4 ' ref={scrollref}>
         <h1 className='text-3xl font-bold text-center '>View Our Physicians</h1>
         <p className='text-center mt-5'>
             On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment, so blinded by desire that they cannot foresee the pain and trouble that are bound.
