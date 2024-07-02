@@ -125,10 +125,13 @@ function Body() {
               </div>
               <div className="p-6 bg-grey">
                 <div className="leading-relaxed">
-                  <h2 className="leading-tight text-4xl font-bold">CXcon: Experience Transformation</h2>
-                  <p className="mt-4">Our second CXcon in October was dedicated to experience transformation. The free one-day virtual event&nbsp;brought together 230+ heads of digital, thought leaders, and UX practitioners to discuss all aspects of experience design.</p>
-                  <p className="mt-4">In a jam-packed day filled with keynote sessions, panels, and virtual networking we explored topics including design leadership, UX ethics, designing for emotion and innovation at scale.</p>
-                  <p><a className="mt-4 button button--secondary" href="https://inviqa.com/cxcon-experience-transformation">Explore this event</a></p>
+                  <h2 className="leading-tight text-4xl font-bold">DermCare: Your Premier Dermatology Website</h2>
+                  <p className="mt-4">
+DermCare: Your Premier Dermatology Website
+At DermCare, we are dedicated to providing top-notch dermatological care using cutting-edge technology and a patient-first approach. Our seamless appointment system, valuable educational resources, and robust admin dashboard ensure efficient and personalized care. With enhanced security measures, your personal information is always protected. Experience the DermCare difference and achieve healthier, radiant skin with us.
+</p>
+                  {/* <p className="mt-4">In a jam-packed day filled with keynote sessions, panels, and virtual networking we explored topics including design leadership, UX ethics, designing for emotion and innovation at scale.</p> */}
+                  <p><a className="mt-4 button button--secondary" >Explore Website</a></p>
                 </div>
               </div>
             </div>

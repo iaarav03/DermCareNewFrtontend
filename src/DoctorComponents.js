@@ -3,6 +3,7 @@ import { useState } from 'react';
 import img1 from "./assets/img1.jpg";
 import img2 from "./assets/img2.png";
 import img3 from "./assets/img3.jpeg";
+import img4 from "./assets/img4.jpg";
 import { FiArrowRight } from 'react-icons/fi';
 import { FaArrowLeft } from 'react-icons/fa';
 
@@ -10,33 +11,34 @@ const store = [
   {
     id:1,
     imgAdd:img1,
-    heading:"Dentist",
-    para:"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment,"
+    heading:"Dr. Emily Johnson, MD",
+    para:"Dr. Emily Johnson is a board-certified dermatologist with over 15 years of experience in acne treatment, skin cancer screening, and cosmetic procedures. She is dedicated to providing personalized and up-to-date care."
   },
   {
     id:2,
     imgAdd:img2,
-    heading:"Dentist",
-    para:"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment,"
+    heading:"Dr. Michael Smith, MD",
+    para:"Dr. Michael Smith specializes in treating chronic skin conditions like eczema and psoriasis. His compassionate approach and expertise in dermatosurgery make him a valued member of our team."
   },
   {
     id:3,
     imgAdd:img3,
-    heading:"Dentist",
-    para:"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment,"
+    heading:"Dr. David Lee, MD",
+    para:"Dr. David Lee specializes in dermatopathology and the diagnosis of complex skin disorders. His meticulous approach ensures effective treatment plans for challenging cases."
   },
   {
-    id:3,
-    imgAdd:img3,
-    heading:"Dentist",
-    para:"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment,"
+    id:4,
+    imgAdd:img4,
+    heading:"Dr. Sarah Thompson, DO",
+    para:"Dr. Sarah Thompson focuses on skin rejuvenation and anti-aging treatments. She combines her extensive knowledge with the latest techniques to help patients achieve youthful, healthy skin."
   },
   {
-    id:2,
+    id:5,
     imgAdd:img2,
-    heading:"Dentist",
-    para:"On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by the charms of pleasure of the moment,"
+    heading:"Dr. Michael Smith, MD",
+    para:"Dr. Michael Smith specializes in treating chronic skin conditions like eczema and psoriasis. His compassionate approach and expertise in dermatosurgery make him a valued member of our team."
   },
+ 
  
 ];
 
